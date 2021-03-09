@@ -20,6 +20,16 @@ public class BogoSorter extends Sorter {
      */
     @Override
     void sort(int[] array, SortingVisualizer display) {
-        
+    	while(!inOrder(array)) {
+    		for(int i = 0; i < array.length; i++) {
+    			
+    		}
+    	}
+    }
+    boolean inOrder(int[] arr) {
+    	for(int i = 0; i < arr.length - 1; i++) {
+    		if(arr[i] > arr[i+1]) return false;
+    	}
+    	return true;
     }
 }
