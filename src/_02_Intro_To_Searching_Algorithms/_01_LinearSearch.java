@@ -1,5 +1,7 @@
 package _02_Intro_To_Searching_Algorithms;
 
+import java.lang.reflect.Array;
+
 public class _01_LinearSearch {
     /*
      * When finding the location of a certain element in an array,
@@ -11,7 +13,15 @@ public class _01_LinearSearch {
         //    in the array. Return the location in the array
         //    where the value was found.
         //    If the value is not found in the array, return -1.
+    	int g = -1;
 
-        return 0;
+    	for(int i = 0; i<words.length; i++) {
+    		if (words[i].equals(value)) {
+    			g = i;
+    			break;
+    		}
+    	}
+    	
+        return g;
     }
 }

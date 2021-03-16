@@ -45,6 +45,22 @@ public class ThanosSorter extends Sorter {
      */
     @Override
     void sort(int[] arr, SortingVisualizer display) {
-        
+    	int n = arr.length;
+        while(!inOrder(arr, n)) {
+        	n/=2;
+        	for(int i = n; i<arr.length; i++) {
+        		arr[i] = 0;
+        	}
+        	display.updateDisplay();
+        }
     }
+    
+    
+    boolean inOrder(int[] arr, int length) {
+    	for(int i = 0; i < length - 1; i++) {
+    		if(arr[i] > arr[i+1]) return false;
+    	}
+    	return true;
+    }
+    
 }

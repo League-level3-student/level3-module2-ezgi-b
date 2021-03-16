@@ -62,7 +62,7 @@ public class _00_SearchingAlgorithmsDemo {
         }
         
         System.out.println();
-        System.out.println("Using Linear Search on list to find: " + targetValue + " in " + Arrays.toString(intList.toArray()));
+        System.out.println("Using Linear Search on list to find: " + targetValue + " in " + intList);
         System.out.println(targetValue + " found at index: " + indexOfValue);
     }
 }
