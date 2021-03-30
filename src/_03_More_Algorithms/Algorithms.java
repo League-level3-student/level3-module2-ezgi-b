@@ -1,5 +1,7 @@
 package _03_More_Algorithms;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -71,7 +73,7 @@ public class Algorithms {
 	}
 
 	public static List<Double> sortScores(List<Double> results) {
-		List<Double> output = results;
+		ArrayList<Double> output = new ArrayList<Double>(results);
 		for(int i = 1; i<output.size(); i++) {
 			int j = i;
 			while(j>=0&&output.get(i)<=output.get(j)) {
